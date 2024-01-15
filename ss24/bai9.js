@@ -1,4 +1,4 @@
-function GDC(x, y){
+function UCLNN(x, y){
     while(x*y != 0){
         if(x > y){
             x %= y;
@@ -16,8 +16,8 @@ let d = +prompt("Nhập d:");
 if(isNaN(a) || isNaN(b) || isNaN(c) || isNaN(d) || (a,b,c)<0){
     console.log("Số không hợp lệ");
 } else {
-    let result = GDC(a, b);
-    result = GDC(result, c);
-    result = GDC(result, d);
-    console.log(`UCLN của ${a}, ${b}, ${c}, ${d} là: ${result}`);
+    let result = UCLNN(a, b);
+    result = UCLNN(result, c);
+    result = UCLNN(result, d);
+    console.log(`ƯCLN của ${a}, ${b}, ${c}, ${d} là: ${result}`);
 }
